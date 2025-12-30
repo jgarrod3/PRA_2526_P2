@@ -115,7 +115,8 @@ class BSTree {
 		}
 
 		void remove(T e) {
-			return search(e);
+			root = remove(root, e);
+			nelem--;
 		}
 
 		~BSTree() {
