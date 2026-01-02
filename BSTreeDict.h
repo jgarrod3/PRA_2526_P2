@@ -48,6 +48,7 @@ class BSTreeDict: public Dict<V> {
 			V value = tree->search(entry).value;
 			tree->remove(entry);
 			entryCount--;
+			return value;
 		}
 
 		int entries() const override {
